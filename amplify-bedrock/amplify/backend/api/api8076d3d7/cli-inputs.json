@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/image/{imageURL}": {
+      "name": "/image/{imageURL}",
+      "lambdaFunction": "amplifybedrock41251138",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

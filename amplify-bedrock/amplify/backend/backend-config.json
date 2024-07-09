@@ -1,0 +1,49 @@
+{
+  "api": {
+    "api8076d3d7": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifybedrock41251138"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "amplifybedrock41251138": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "providerPlugin": "awscloudformation",
+      "service": "S3AndCloudFront"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_amplifybedrock41251138_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifybedrock41251138"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifybedrock41251138_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifybedrock41251138"
+        }
+      ]
+    }
+  }
+}
